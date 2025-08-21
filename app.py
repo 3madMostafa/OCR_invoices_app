@@ -413,11 +413,6 @@ def main():
     # Footer
     st.markdown("---")
     st.markdown("""
-    ### 🔧 Requirements
-    - **PyPDF2** or **pdfplumber** for PDF text extraction
-    - **pytesseract** and **pdf2image** for OCR (optional)
-    - **arabic-reshaper** and **python-bidi** for Arabic text support
-    
     ### 📝 Notes
     - Processing time depends on file size and number of workers
     - OCR fallback is slower but more accurate for scanned PDFs
@@ -442,3 +437,4 @@ if __name__ == "__main__":
     multiprocessing.freeze_support()  # Windows compatibility
 
     main()
+
