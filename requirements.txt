@@ -1,0 +1,10 @@
+streamlit
+pandas
+PyPDF2
+pdfplumber
+openpyxl
+pytesseract
+pdf2image
+arabic-reshaper
+python-bidi
+Pillow
