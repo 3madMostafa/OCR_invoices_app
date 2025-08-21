@@ -422,8 +422,23 @@ def main():
     - Processing time depends on file size and number of workers
     - OCR fallback is slower but more accurate for scanned PDFs
     - Arabic text is automatically detected and properly formatted
+
+    ### 🗂️ Mapping Hints
+    - **INTERNAL ID -1** → Invoice ID  
+    - **INTERNAL ID -2** → Internal ID (raw string)  
+    - **DATE** → Issuance Date (YYYY-MM-DD)  
+    - **TYPE** → Invoice  
+    - **version** → (leave blank)  
+    - **TOTAL VALUE EGP** → Total Amount (EGP)  
+    - **FROM** → Issuer “Taxpayer Name”  
+    - **REGESTRAION NUMBER** → Issuer Registration Number  
+    - **STATUS** → Status  
+    - **REGESTRAION** → Recipient Registration Number  
+    - **PO number** → via multi-pass search (ignore “proforma”, leave empty if not found)  
     """)
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()  # Windows compatibility
+
     main()
